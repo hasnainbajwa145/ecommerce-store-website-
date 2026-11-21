@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Header */
+thead {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+th {
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Body */
+td {
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    color: #334155;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Alternate Rows */
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Hover Animation */
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #dbeafe;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+/* First Column */
+td:first-child {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* GPA Styling */
+td:last-child {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Last Row */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+}
